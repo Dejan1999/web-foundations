@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Basics of CSS</title>
+  </head>
+  <body>
+
+    <div class="my-div">
+      <h1>Weclome to Our Programming School</h1>
+      <h1 class="my-h1">Testing class selectors:</h1>
+
+      <button disabled>Click Me!</button>
+
+      <!-- ! Selector Types: -->
+       <h1>Selector Types:</h1>
+      <ol id="selector-types">
+        <li>Element Selector (h3 { color: blue;})</li>
+        <li>Class Selector (.neka-klasa {color: red;})</li>
+        <li>Universal Selector (* { background-color: green;})</li>
+        <li>ID Selector (#neki-id {color: yellow;})</li>
+        <li>Attribute Selelctor ( [disabled] { color: black;})</li>
+      </ol>
+
+      <!-- ! Levels of Specificity (Hierarchy) -->
+       <ol>
+        <li>Element Selectors (h1, p, h3, img) and pseudo elements (::after, ::before)</li>
+        <li>Class Selecto (.neka-klasa) and pseudo class (:pseudo-class) and Attribute Selectors ([disabled])</li>
+        <li>ID Selector (#neki-id)</li>
+        <li>Inline CSS style (h1 color: red;) <b>Izbegavati</b></li>
+       </ol>
+  
+
+    <p class="my-paragraph" id="id-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quasi aspernatur, quibusdam minus explicabo aliquid dolor dignissimos,
+      odit at unde vero repellat architecto aut ipsa sapiente blanditiis neque maiores accusantium dicta.
+    </p>
+
+    <!-- ! Combinators -->
+    <h4>First h4 Element</h4>
+    <h4>Second h4 Element</h4>
+    <h4 class="my-h4">Third h4 Element</h4>
+   </div>
+  </body>
+
+</html>
