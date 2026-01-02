@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.hero-overview {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 15px;
+    width: 50%;
+    height: 250px;
+}
+
+.hero-overview h1 {
+    width: 200px;
+}
+
+.content-box {
+    /* Default value is content-box */
+    box-sizing: content-box;
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid red;
+    background-color: rgb(240, 217, 217);
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    border: 2px solid green;
+    background-color: rgb(210, 231, 210);
+}
