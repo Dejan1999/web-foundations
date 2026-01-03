@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* ! Box-sizing */
+.hero-overview {
+    padding: 20px;
+    border: 1px solid black;
+    margin: 15px;
+    width: 50%;
+    height: 250px;
+}
+
+.hero-overview h1 {
+    width: 200px;
+}
+
+.content-box {
+    /* Default value is content-box */
+    box-sizing: content-box;
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid red;
+    background-color: rgb(240, 217, 217);
+}
+
+.border-box {
+    box-sizing: border-box;
+    width: 500px;
+    height: 100px;
+    padding: 25px;
+    border: 2px solid green;
+    background-color: rgb(210, 231, 210);
+}
+
+/* ! Display */
+/* ? For block element's display: block is default */
+.block-element {
+    border: 1px solid blue;
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+/* ? For inline element's display: inline is default */
+.inline-element {
+    border: 1px solid orange;
+    /* This dont work on inline element's! */
+    width: 200px;
+    height: 200px;
+}
+
+.inline-block-element {
+    display: inline-block;
+    border: 1px solid green;
+    width: 200px;
+    height: 50px;
+    /* ? Shorthand property */
+    /* margin: 15px; */
+    /* margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-right: 50px; */
+    /* margin: 20px 30px 25px 80px; */
+    margin: 50px 100px; /* ? This Shorthand apply 50px up and down and 100px left and right*/
+}
+
+/* ? display none and visibility */
+.not-shown {
+    /* display: none; */
+    visibility: hidden;
+}
