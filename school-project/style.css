@@ -14,14 +14,18 @@ body {
 }
 
 .main-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     border-top: 10px solid #ef9273;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
     border-bottom: 5px solid #fff;
 }
 
 .main-header .main-header__logo {
-    display: inline-block;
+    /* display: inline-block; */
     font-family: "Source Code Pro", monospace;
     font-size: 25px;
     font-weight: bolder;
@@ -34,7 +38,7 @@ body {
 }
 
 .main-header .main-nav {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: right;
     vertical-align: middle;
     width: calc(100% - 200px);
@@ -47,6 +51,7 @@ body {
 }
 
 .main-nav__item {
+    display: flex;
     display: inline-block;
     margin-left: 50px;
 }
