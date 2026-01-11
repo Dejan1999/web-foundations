@@ -20,12 +20,10 @@ body {
     align-items: center;
     border-top: 10px solid #ef9273;
     padding: 20px;
-    /* width: 100%; */
     border-bottom: 5px solid #fff;
 }
 
 .main-header .main-header__logo {
-    /* display: inline-block; */
     font-family: "Source Code Pro", monospace;
     font-size: 25px;
     font-weight: bolder;
@@ -37,8 +35,12 @@ body {
     text-decoration: none;
 }
 
+.main-header__logo a img {
+    width: 60px;
+    height: 60px;
+}
+
 .main-header .main-nav {
-    /* display: inline-block; */
     text-align: right;
     vertical-align: middle;
 }
@@ -55,8 +57,12 @@ body {
 
 .main-nav__item {
     display: flex;
-    /* display: inline-block; */
     margin-left: 50px;
+}
+
+.main-nav__item:nth-child(1),
+.main-nav__item:nth-child(2) {
+    margin-right: 25px;
 }
 
 .main-nav__item a {
@@ -81,8 +87,6 @@ body {
 }
 
 .hero-wrapper {
-    /* width: 100vw; */
-    /* height: 500px; */
     padding: 20px;
     font-family: "Courier Prime", monospace;
     width: 100%;
@@ -90,4 +94,58 @@ body {
     background-image: url(./assets/hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.plans-wrapper {
+    margin: 50px auto; 
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plans-wrapper__article {
+    background: #f9e0d7;
+    border: 1px solid black;
+    min-height: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.plans-wrapper__article h1:nth-child(2) {
+    font-family: "Courier Prime", monospace;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+    text-underline-offset: 5px;
+}
+
+.plans-wrapper__article.advanced {
+    order: 2;
+    background: #eb9a7f;
+    min-height: 450px;
+}
+
+.plans-wrapper__article.basic {
+    order: 1;
+}
+
+.plans-wrapper__article.intermediate{
+    order: 3;
+}
+
+.plans-wrapper__article ul li {
+    list-style: circle;
+}
+
+
+.plans-wrapper .plans-wrapper__title {
+    text-align: center;
+    flex-basis: 100%;
+    font-family: "Courier Prime", monospace;
+    font-size: 45px;
 }
