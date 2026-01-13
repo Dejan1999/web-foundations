@@ -73,24 +73,21 @@ body {
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.li-first {
-    margin-right: 25px;
-}
+} 
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
     color: #fef9f8;
     background: #ef9273;
     border-radius: 40px;
+    transition: 0.3s ease;
 }
 
 .hero-wrapper {
     padding: 20px;
     font-family: "Courier Prime", monospace;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-image: url(./assets/hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -105,29 +102,51 @@ body {
     align-items: center;
 }
 
-.plans-wrapper__article {
-    background: #f9e0d7;
-    border: 1px solid black;
-    min-height: 400px;
-    padding: 20px;
+.plans-wrapper .plans-wrapper__title {
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    flex-basis: 100%;
+    font-family: "Courier Prime", monospace;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #eb9a7f;
+}
+
+.plans-wrapper .plans-wrapper__article {
+    padding: 50px 35px;
+    background: #e9baab;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-basis: 30%;
+    min-width: 350px;
+    border-radius: 25px;
+    border: 3px solid black;
+    box-shadow: 5px 4px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+.plans-wrapper__article h1:nth-child(1) {
+    font-family: "Courier Prime", monospace;
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #ddd7d6;
 }
 
 .plans-wrapper__article h1:nth-child(2) {
     font-family: "Courier Prime", monospace;
     font-weight: bold;
     font-size: 28px;
+    letter-spacing: 3px;
     text-decoration: underline;
     text-align: center;
-    text-underline-offset: 5px;
+    text-underline-offset: 6px;
+    text-shadow: 2px 2px #ddd7d6;
 }
 
 .plans-wrapper__article.advanced {
     order: 2;
     background: #eb9a7f;
-    min-height: 450px;
+    min-height: 650px;
 }
 
 .plans-wrapper__article.basic {
@@ -138,14 +157,45 @@ body {
     order: 3;
 }
 
-.plans-wrapper__article ul li {
-    list-style: circle;
+.plans-wrapper__article h2 {
+    font-family: "Courier Prime", monospace;
+    text-shadow: 2px 2px 2px #ddd7d6;
 }
 
-
-.plans-wrapper .plans-wrapper__title {
-    text-align: center;
-    flex-basis: 100%;
+.plans-wrapper__article h3 {
     font-family: "Courier Prime", monospace;
-    font-size: 45px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #ddd7d6;
+    font-size: 23px;
+}
+
+.plans-wrapper__article ul {
+    list-style: circle;
+    align-self: flex-start;
+}
+
+.plans-wrapper__article ul li {
+    font-family: "Source Code Pro", monospace;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ddd7d6;
+}
+
+.choose-plan_button {
+    margin-top: 20px;
+}
+
+.choose-plan_button button {
+    padding: 10px 25px;
+    font-family: "Courier Prime", monospace;
+    border: 2px solid black;
+    font-size: 18px;
+    background: #fef9f8;
+    border-radius: 10px;
+}
+
+.choose-plan_button button:hover {
+    cursor: pointer;
+    background: #ddd7d6;
+    transition: 0.2s ease-in;
 }
