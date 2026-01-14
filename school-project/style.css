@@ -13,6 +13,7 @@ body {
     background-color: #fef9f8;
 }
 
+/* Header Section */
 .main-header {
     display: flex;
     flex-wrap: nowrap;
@@ -93,6 +94,7 @@ body {
     background-size: cover;
 }
 
+/* Plans Section */
 .plans-wrapper {
     margin: 50px auto; 
     width: 90%;
@@ -198,4 +200,29 @@ body {
     cursor: pointer;
     background: #ddd7d6;
     transition: 0.2s ease-in;
+}
+
+/* About Section */
+.about-wrapper {
+    margin-top: 100px;
+    padding: 50px 0;
+    background: #eb9a7f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-wrapper__title {
+    text-align: center;
+    flex-basis: 100%;
+    font-family: "Courier Prime", monospace;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 3px #ddd7d6;
+}
+
+.about-wrapper__text {
+  max-width: 900px;
+  margin: 0 auto;
 }
