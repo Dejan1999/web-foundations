@@ -1,0 +1,82 @@
+@import url("../style.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-wrapper {
+  min-height: calc(100vh - 140px); 
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../assets/enrollment-image.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.form-wrapper__form {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 30px 35px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.form-wrapper__form h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.form-wrapper__form label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  opacity: 0.9;
+}
+
+.form-wrapper__form input,
+.form-wrapper__form select,
+.form-wrapper__form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.form-wrapper__form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.form-wrapper__form button {
+  width: 100%;
+  padding: 10px;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-wrapper__form button:hover {
+  background: #ccc;
+}
+
+.main-footer {
+  margin-top: 0;
+}
