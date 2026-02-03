@@ -73,3 +73,12 @@
 .rotateY-box:hover {
     transform: perspective(500px) scaleZ(2) rotateY(180deg);
 }
+
+.rotate-box {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+.rotate-box:hover {
+    transform: rotate(360deg);
+}
