@@ -82,3 +82,30 @@
 .rotate-box:hover {
     transform: rotate(360deg);
 }
+
+.skewX-box {
+    transform: skewX(0);
+    transition: transform 0.5s ease;
+}
+
+.skewX-box:hover {
+    transform: skewX(-20deg);
+}
+
+.skewY-box {
+    transform: skewY(0);
+    transition: transform 0.5s ease;
+}
+
+.skewY-box:hover {
+    transform: skewY(20deg);
+}
+
+.skew-box {
+    transform: skew(0);
+    transition: transform 0.5s ease;
+}
+
+.skew-box:hover {
+    transform: skew(20deg, 30deg);
+}
