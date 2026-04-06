@@ -6,6 +6,8 @@
 - `git add` - add one file on stage
 - `git add .` - add all files on stage
 - `git status` - show status
+- `git restore --staged ` - unstage file
+- `git commit -m "Inital Commit"` - represent(describe) commit
 
 
 ## 🔹 Commit Types (Conventional Commits)
