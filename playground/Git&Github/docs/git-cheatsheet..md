@@ -2,12 +2,24 @@
 
 ## 🔹 Basic Workflow
 
-- `git init` - initialized new repositorium
-- `git add` - add one file on stage
-- `git add .` - add all files on stage
-- `git status` - show status
-- `git restore --staged ` - unstage file
-- `git commit -m "Inital Commit"` - represent(describe) commit
+- `git init` – initialize a new repository
+- `git add file-name` – stage a specific file
+- `git add .` – stage all files
+- `git status` – show the current status of the working directory
+- `git restore --staged file-name` – unstage a file
+- `git commit -m "message"` – create a new commit with a message
+- `git log` – view full commit history
+- `git log --oneline` – view commit history in short format
+- `git checkout <commit-id>` – switch to a specific commit (detached HEAD)
+- `git checkout main` – switch back to the main branch
+- `git revert <commit-id>` – create a new commit that undoes changes from a previous commit
+- `git revert --abort` – cancel the revert process and restore previous state
+- `git switch branch-name` – switch to an existing branch
+- `git switch -c branch-name` – create and switch to a new branch
+- `git reset <commit-id>` – move HEAD to a previous commit (modifies history)
+- `git reset --soft <commit-id>` – move HEAD but keep changes staged
+- `git reset <commit-id>` – move HEAD and unstage changes (keep files)
+- `git reset --hard <commit-id>` – move HEAD and delete all changes permanently
 
 
 ## 🔹 Commit Types (Conventional Commits)
