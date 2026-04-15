@@ -20,7 +20,14 @@
 - `git reset --soft <commit-id>` – move HEAD but keep changes staged
 - `git reset <commit-id>` – move HEAD and unstage changes (keep files)
 - `git reset --hard <commit-id>` – move HEAD and delete all changes permanently
-
+- `git branch` – list all branches
+- `git branch branch-name` – create a new branch
+- `git switch branch-name` – switch to an existing branch
+- `git switch -c branch-name` – create and switch to a new branch
+- `git checkout branch-name` – (older) switch to a branch
+- `git branch -d branch-name` – delete a branch (safe delete)
+- `git branch -D branch-name` – force delete a branch
+- `git merge branch-name` – merge a branch into the current branch
 
 ## 🔹 Commit Types (Conventional Commits)
 
