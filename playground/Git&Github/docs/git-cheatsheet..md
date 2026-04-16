@@ -28,6 +28,17 @@
 - `git branch -d branch-name` – delete a branch (safe delete)
 - `git branch -D branch-name` – force delete a branch
 - `git merge branch-name` – merge a branch into the current branch
+- `git stash` – save current changes (tracked files) and clean working directory
+- `git stash save "message"` – stash with a custom message (older syntax)
+- `git stash push -m "message"` – stash changes with a message (recommended)
+- `git stash apply` – apply last stash (keeps it in stash list)
+- `git stash pop` – apply last stash and remove it from stash list
+- `git stash list` – show all stashed changes
+- `git stash drop` – delete last stash
+- `git stash clear` – delete all stashes
+- `git stash apply stash@{0}` – apply specific stash
+- `git stash drop stash@{0}` – delete specific stash
+- `git stash -u` – stash tracked + untracked files
 
 ## 🔹 Commit Types (Conventional Commits)
 
