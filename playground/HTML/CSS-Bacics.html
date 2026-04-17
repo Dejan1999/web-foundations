@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Basics of CSS</title>
+    <!-- ! Not recommended way to write CSS -->
+    <style>
+      h2 {
+        color: #b75844;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ! Bad way to write CSS! -->
+    <div class="my-div">
+      <h1 style="color: blue; font-size: 3.125rem">
+        Welcome to Our Programming School
+      </h1>
+
+      <h2>Another way of applying CSS</h2>
+
+      <button disabled>Click Me!</button>
+
+      <!-- Best practice to write CSS -->
+      <h3>Third way of applying CSS</h3>
+
+      <h2 class="my-h2">Testing Class Selectors</h2>
+
+      <!-- Selector Types -->
+
+      <h2>Selector Types</h2>
+
+      <ol id="selector-types">
+        <li>Element Selector( h3 {color: blue;} )</li>
+        <li>Class Selector ( .some-class {color: red;} )</li>
+        <li>Universal Selector ( * {background-color: red;} )</li>
+        <li>ID Selector ( #selector-id { color: green;} )</li>
+        <li>Attribite Selector ( [disabled] { color: yellow} )</li>
+      </ol>
+
+      <!-- ! Levels of Specificity (Hierarchy) -->
+
+      <ol>
+        <li>
+          Element Selectors(h1, h3, p, img) and pseudo-elements (::after,
+          ::before)
+        </li>
+        <li>
+          Class Selectors (.some-class) and pseudo-class (:pseudo-class) and
+          Attribute Selector([disabled])
+        </li>
+        <li>ID Selector(#selector-id)</li>
+        <li>Inline CSS style (h1 {color:red;})</li>
+      </ol>
+
+      <p class="my-paragraph" id="id-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum natus
+        cumque deserunt, laborum sit doloribus necessitatibus corporis dolorem
+        quasi recusandae.
+      </p>
+
+      <!-- Combinators -->
+      <h4>First h4 Element</h4>
+      <h4>Second h4 Element</h4>
+      <h4 class="my-h4">Third h4 Element</h4>
+
+    </div>
+  </body>
+</html>

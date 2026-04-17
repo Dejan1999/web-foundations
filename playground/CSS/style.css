@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+/* Universal Selector */
+* {
+    background-color: rgb(211, 203, 203);
+}
+
+/* Element Selector */
+h3{
+    color: #0cbd06;
+    font-family: "Courier Prime", monospace;
+}
+
+/* Class Selector */
+.my-h2 {
+    color: #dd3300;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+/* ID Selector */
+#selector-types {
+    color: purple;
+}
+
+/* Attribute Selector */
+[disabled] {
+    font-size: 1.2rem;
+    color: red;
+}
+
+p {
+    font-size: 1.2rem;
+    color: red;
+}
+
+.my-paragraph {
+    color: blue;
+}
+
+#id-paragraph {
+    color: #0cbd06;
+}
+
+/* Combinators */
+.my-div h4{
+    color: teal;
+}
+
+.my-h4 {
+    color: red;
+}
