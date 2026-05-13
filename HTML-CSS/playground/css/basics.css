@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Code+Pro:ital@0;1&display=swap');
+/* 
+font-family: "Courier Prime", monospace;
+font-family: "Source Code Pro", monospace;
+*/
+
+/* ! Universal Selector */
+* {
+    background-color: rgb(211, 203, 203)
+}
+
+/* ! Element Selector */
+h2 {
+    color: #0cbd06;
+    font-family: "Courier Prime", monospace;
+}
+
+/* ! Class Selector */
+.my-h3 {
+    color: #dd3300;
+    font-family: "Source Code Pro", monospace;
+    font-size: 35px;
+}
+
+/* ! ID Selector */
+#selector-types {
+    color: purple;
+}
+
+/* ! Attribute Selector */
+[disabled] {
+    font-size: 20px;
+    color: red;
+}
+
+/* ! Testing Specificity */
+p {
+    font-size: 20px;
+    color: red;
+}
+
+.my-paragraph {
+    color: blue;
+}
+
+#id-paragraph {
+    color: #0cbd06;
+}
+
+/* ! Combinators */
+.my-div h4{
+    color: rgb(152, 100, 4);
+}
+
+.my-h4 {
+    color: brown;
+}
