@@ -36,3 +36,39 @@ body {
     border: 2px solid green;
     background-color: rgb(181, 198, 181);
 }
+
+.block-element {
+    /* display: block; */
+    border: 1px solid blue;
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.inline-element {
+    /* display: inline; */
+    border: 1px solid orange;
+    width: 200px;
+    height: 200px;
+}
+
+.inline-block__element {
+    display: inline-block;
+    border: 1px solid green;
+    width: 200px;
+    height: 50px;
+    /* margin: 15px; */ /* ! Shorthand*/
+
+    /* margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 30px; */
+
+    /* margin: 50px 45px 30px 80px; */
+    margin: 50px 100px;
+}
+
+.not-shown {
+    /* display: none; */
+    visibility: hidden;
+}
