@@ -15,6 +15,9 @@ body {
 
 /* ! Main Header */
 .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-top: 10px solid #ef9273;
     padding: 20px;
     width: 100%;
@@ -22,12 +25,10 @@ body {
 }
 
 .main-header .main-header__logo {
-    display: inline-block;
     font-family: "Source Code Pro", monospace;
     font-size: 25px;
     font-weight: bolder;
-    vertical-align: middle;
-}
+} 
 
 .main-header__logo a {
     color: #0d0d0d;
@@ -35,13 +36,13 @@ body {
 }
 
 .main-header .main-nav {
-    display: inline-block;
     text-align: right;
     vertical-align: middle;
-    width: calc(100% - 180px);
+    /* width: calc(100% - 180px); */
 }
 
 .main-nav__items {
+    display: flex;
     /* list-style-type: none; */
     list-style: none;
     padding: 0;
