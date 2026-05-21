@@ -36,11 +36,17 @@ body {
     text-decoration: none;
 }
 
-.main-header .main-nav {
+.main-header__logo a img {
+    width: 70px;
+    height: 70px;
+}
+
+/* .main-header .main-nav {
     text-align: right;
     vertical-align: middle;
-    /* width: calc(100% - 180px); */
-}
+    /* width: calc(100% - 180px); 
+} */
+
 
 .main-nav__items {
     display: flex;
@@ -50,9 +56,9 @@ body {
     margin: 0;
 }
 
-.main-nav__item {
-    display: inline-block;
-    white-space: nowrap;
+.main-nav__item:nth-child(1), 
+.main-nav__item:nth-child(1) {
+    margin-right: 25px;
 }
 
 .main-nav__item a {
@@ -65,15 +71,12 @@ body {
     padding-right: 20px;
 }
 
-.li-first {
-    margin-right: 25px;
-}
-
 .main-nav__item a:hover,
 .main-nav__item a:active  {
     color: #fef9f8;
     background-color: #ef9273;
     border-radius: 40px;
+    transition: 0.3s ease;
 }
 
 /* ! Hero Section */
@@ -83,8 +86,66 @@ body {
     width: 100%;
     /* width: 100vw; */
     /* height: 500px; */
-    height: 50vh;
+    height: 70vh;
     background-image: url(./assets/hero-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* ! Plans Section */
+.plans-wrapper {
+    margin: 50px auto;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plans-wrapper .plans-wrapper__title {
+    text-align: center;
+    flex-basis: 100%;
+    font-family: "Courier Prime", monospace;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+.plans-wrapper .plans-wrapper__article {
+    border: 3px solid black;
+    padding: 50px 35px;
+    background: #e9baab;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-basis: 30%;
+    min-width: 350px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-shadow: 5px 4px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.advanced {
+    order: 1;
+    height: 600px;
+    background: #eb9a7f !important;
+}
+
+.intermediate {
+    order: 2;
+}
+
+.plans-wrapper__article h1:nth-child(1) {
+    font-family: "Courier Prime", monospace;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.plans-wrapper__article h2:nth-child(2) {
+    font-family: "Courier Prime", monospace;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: underline;
+    text-align: center;
+    text-underline-offset: 5px;
 }
