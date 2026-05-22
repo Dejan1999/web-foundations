@@ -1,12 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../courses/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../courses/courses.css" />
     <title>Courses</title>
-</head>
-<body>
-    <h1>Welcome to Our Courses Page!</h1>
-</body>
+  </head>
+  <body>
+    <!-- Main header -->
+    <header class="main-header">
+      <div class="main-header__logo">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="logo_image" />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item li-first">
+            <a href="./courses/index.html"> Courses </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="../team/index.html"> Our Team </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="../enrollment/index.html">Enrollment</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="courses-wrapper">
+      <div class="courses-wrapper__course basic-course">
+        <h1>Basic</h1>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6 syntax)</li>
+        </ul>
+        <p>
+          <!-- WINDOWS + . for emoji shortcut -->
+          💻 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+          possimus illum ad labore dolorem iusto vitae. Laboriosam corrupti
+          repellendus cupiditate?
+        </p>
+      </div>
+
+       <div class="courses-wrapper__course advanced-course">
+        <h1>Advanced</h1>
+        <ul>
+          <h1 class="recomended">⭐ Recomended</h1> 
+          <li>HTML5</li>
+          <li>CSS3 with SASS/SCSS</li>
+          <li>JavaScript (ES5 and ES6 syntax) with OOP</li>
+        </ul>
+        <p>
+          <!-- WINDOWS + . for emoji shortcut -->
+          💻 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+          possimus illum ad labore dolorem iusto vitae. Laboriosam corrupti
+          repellendus cupiditate?
+        </p>
+      </div>
+
+      <div class="courses-wrapper__course intermediate-course">
+        <h1>Intermediate</h1>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES5 and ES6 syntax)</li>
+        </ul>
+        <p>
+          <!-- WINDOWS + . for emoji shortcut -->
+          💻 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+          possimus illum ad labore dolorem iusto vitae. Laboriosam corrupti
+          repellendus cupiditate?
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+      <nav class="main-footer__nav">
+        <ul class="main-footer__list">
+          <li>
+            <a href="#">Support</a>
+          </li>
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>
