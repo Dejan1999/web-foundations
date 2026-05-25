@@ -63,3 +63,69 @@
 .form-wrapper__form button:hover {
     background-color: #e07f5d;
 }
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+
+    .form-wrapper__form {
+        padding: 30px 20px;
+    }
+
+    .form-wrapper__form__title {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .form-wrapper__form label,
+    .form-wrapper__form input,
+    .form-wrapper__form select,
+    .form-wrapper__form textarea {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .form-wrapper__form textarea {
+        height: 180px;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+
+    .form-wrapper {
+        background-position: center;
+    }
+
+    .form-wrapper__form {
+        gap: 12px;
+        padding: 20px 15px;
+    }
+
+    .form-wrapper__form__title {
+        font-size: 1.1em;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .form-wrapper__form label {
+        font-size: 0.95em;
+    }
+
+    .form-wrapper__form input,
+    .form-wrapper__form select,
+    .form-wrapper__form textarea {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        font-size: 0.95em;
+    }
+
+    .form-wrapper__form textarea {
+        height: 150px;
+    }
+
+    .form-wrapper__form button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
