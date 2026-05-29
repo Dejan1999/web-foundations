@@ -321,8 +321,10 @@ body {
 
   /* HERO */
   .hero-wrapper {
-    height: 50vh;
-    background-position: center;
+    height: 70vh;
+    background-image: url(./assets/hero-img-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .hero-wrapper h1 {

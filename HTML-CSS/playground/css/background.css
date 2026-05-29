@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 3000px;
+}
+
+.background-wrapper {
+    width: 100%;
+    height: 60vh;
+
+    /* ! Background (image and color) */
+    background: url('../assets/test-img.jpg'), orange;
+
+    /* ! Background Position property (top, left, bottom, center, %, px, combinations) */
+    /* background-position: center; */
+    background-position: 20% 50%;
+
+    /* ! Background Repeat */
+    background-repeat: no-repeat;
+
+    /* ! Background Size */
+    /* background-size: 100% 100%; */
+    background-size: cover;
+
+    /* ! Background Clip -> define how far will be background */
+    background-clip: border-box; /* ? Default Value*/
+
+    /* ! Background Attachment */
+    background-attachment: fixed; /* ? scroll -> default value*/ 
+ }
