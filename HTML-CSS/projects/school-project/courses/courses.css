@@ -50,13 +50,30 @@
 }
 
 .basic-course {
+    transform: translateX(1) scale(1,1);
+    transition: transfom 0.5s ease-in-out;
     order: 2;
     align-self: flex-end;
+}
+
+.basic-course:hover {
+    transform: translateX(-50%) scale(1.2,1.1);
 }
 
 .intermediate-course {
     order: 3;
 }
+
+.advanced-course,
+.intermediate-course {
+    transform: translateX(1) scale(1,1);
+    transition: transfom 0.5s ease-in-out;
+}
+
+.advanced-course:hover,
+.intermediate-course:hover {
+    transform: translateX(50%) scale(1.2,1.1);
+} 
 
 .advanced-course .recommended {
     font-family: "Source Code Pro", monospace;
