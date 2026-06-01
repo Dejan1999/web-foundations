@@ -120,4 +120,16 @@
         position: static;
         text-align: center;
     }
+
+    .advanced-course,
+    .basic-course,
+    .intermediate-course {
+        transform: none;
+    }
+
+    .advanced-course:hover,
+    .basic-course:hover,
+    .intermediate-course:hover {
+        transform: none;
+    }
 }    
