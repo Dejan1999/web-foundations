@@ -1,0 +1,52 @@
+header nav {
+  background-color: orange;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+header nav ul li {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.first-div, .third-div {
+  background-color: aquamarine;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.first-div h1, .third-div h1 {
+  color: #222;
+  transition: 0.3s ease;
+}
+.first-div h1:hover, .third-div h1:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.second-div {
+  background-color: rgb(240, 212, 212);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.second-div h2 {
+  color: #555;
+}
+
+.third-div {
+  height: 640px;
+  width: 25%;
+}
+.third-div h1 {
+  color: green;
+}/*# sourceMappingURL=sass-practice.css.map */

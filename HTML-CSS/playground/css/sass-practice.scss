@@ -1,0 +1,42 @@
+@use './variables' as *;
+@use './mixins' as *;
+@use './header';
+
+.first-div {
+    background-color: aquamarine;
+    height: 50vh;
+
+    @include flexCenter(center);
+
+    h1 {
+        color: $mainTitleColor;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: yellow;
+            cursor: pointer;
+        }
+    }
+}
+
+.second-div {
+    background-color: rgb(240, 212, 212);
+    height: 50vh;
+
+    @include flexCenter(center);
+
+    h2 {
+        color: $subTtitleColor;
+    }
+}
+
+.third-div {
+    @extend .first-div;
+
+    height: 320px * $doubleSize;
+    width: 100% * 0.25;
+
+    h1 {
+        color: green;
+    }
+}
