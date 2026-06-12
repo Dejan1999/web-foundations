@@ -97,9 +97,32 @@ console.log(anotherTaskVariable);
 
 // * 2.
 
-const mathResult = (123 * 4) - (10 * 2) / 3 + 40;
+let a = 20;
+let operation;
 
-let mathDescription = '(123 * 4) - (10 * 2) / 3 + 40';
+const myOperation = a + 25 - 40 - a / 2 + 5 * 3;
+operationStr = 'a + 25 - 40 - a / 2 + 5 * 3';
 
-console.log(mathResult);
-console.log(mathDescription);
+console.log(myOperation);
+
+console.log(operationStr);
+
+
+console.log('-------------------');
+
+// ? String Concatenation
+let myMathOperation = (a / 10) + (a * 5) - 10;
+
+let myMathOperationStr = '(' + a + ' / 10) + (' + a + ' * 5) - 10'; 
+
+console.log(myMathOperation);
+
+console.log(myMathOperationStr);
+
+let res = 10;
+
+let firstTaskOperation = 'res + (res * 3) - (10 + res)';
+
+let firstTaskOperationStr = res + ' + (' + res + ' * 3) - (10 + ' + res +')';
+
+console.log(firstTaskOperationStr);
