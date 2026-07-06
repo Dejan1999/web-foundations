@@ -246,7 +246,7 @@ currentResult = currentResult / 4;
 console.log(`Current result is: ${currentResult}`);
 
 console.log(userInput);
-alert(`Current result: ${currentResult}`);
+// alert(`Current result: ${currentResult}`);
 
 // 2.
 function getSquaredNumber(squareNumber) {
@@ -254,3 +254,149 @@ function getSquaredNumber(squareNumber) {
 }
 
 console.log(getSquaredNumber(5));
+
+console.log('-------------------');
+
+// ? Type Conversion
+
+// let myRes = 22 + '545';
+
+let myRes = 22 + parseInt('545');
+
+console.log(myRes); // 567
+
+let myResFloat = 22 + parseFloat('44.5')
+
+console.log(myResFloat); // 66.5
+
+myRes = myRes + + '55';
+
+console.log(myRes); // 622
+
+let myResStr = myRes.toString();
+
+console.log(myResStr); // '622'
+
+myRes = 3 * '20';
+
+console.log(myRes); // 60
+
+myRes = '40' - 10;
+
+console.log(myRes); // 30
+
+myRes = '50' / 2;
+
+console.log(myRes); // 25
+
+myRes = myRes + 10; // 35
+
+myRes += 55;
+
+console.log(myRes); // 90
+
+myRes *= 2;
+
+console.log(myRes); // 180
+
+myRes -= 40;
+
+console.log(myRes); // 140
+
+myRes /= 70;
+
+console.log(myRes); // 2
+
+// ? Increment and Decerement operators
+
+let counter = 0;
+
+counter ++; // increment operator
+
+console.log(counter); // 1
+
+counter --; // decrement operator
+
+console.log(counter); // 0
+
+// alert(counter++); // 0
+
+// alert(++counter); // 1
+
+// ? Other Data Types (string, number, boolean(true/false), objects, arrays, undefined, null)
+
+// ? Arrays
+
+let myArray = [];
+
+myArray = [1,2,3,4,5];
+
+myArray.push(6);
+
+myArray.push(44);
+
+myArray.push(888);
+
+console.log(myArray);
+
+console.log(`Fist item in myArray is: ${myArray[0]}`);
+
+console.log(`Last item in myArray is: ${myArray[myArray.length-1]}`);
+
+// ? Objects (key-value)
+
+const person = {
+    firstName: 'Dejan',
+    lastName: 'Karakasevic',
+    age: 26,
+    gender: 'male',
+    isStudnet: true
+}
+
+// person.nationality = 'Serbian';
+
+person['nationality'] = 'Serbian';
+
+console.log(person.firstName);
+
+console.log(`Peson's name is: ${person.firstName} ${person.lastName}`);
+
+console.log(`Person's name is ${person.firstName} and is ${person.age} years old.`);
+
+console.log(`Is student ${person.isStudnet}`);
+
+// ? Undefined vs Null
+
+let testVariable;
+
+console.log(testVariable); // undefined
+
+let selectedProduct = null;
+
+console.log(selectedProduct); // null
+
+// ? NaN (not a number)
+
+console.log(100 - 'Hello World'); // NaN
+
+// ? Typeof operator
+
+console.log(typeof(counter)); // number
+
+console.log(typeof(5 - 'hello')); // number 
+
+console.log(typeof(40.23)); // number
+
+console.log(typeof('My random string.')); // string
+
+console.log(typeof(true)); // boolean
+
+console.log(typeof(person)); // object
+
+console.log(typeof(myArray)); // object
+
+console.log(typeof(null)); // object
+
+console.log(typeof(undefined)); // undefined
+
+console.log(typeof 23); // number
