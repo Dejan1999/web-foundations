@@ -400,3 +400,100 @@ console.log(typeof(null)); // object
 console.log(typeof(undefined)); // undefined
 
 console.log(typeof 23); // number
+
+//  ! HOMEWORK: 
+// 1.
+/*
+    Create a variable with any name you like.
+
+    Assign it the result of adding the number 33
+    and the string '27'.
+
+    Make sure to convert (parse) the string into a number
+    so that the mathematical operation is performed correctly.
+
+    Finally, create a new variable and assign it the result
+    of converting the obtained number into a string.
+*/
+// 2.
+/*
+    Increase the value of the first variable (number type)
+    by 10 using a shorthand assignment operator.
+
+    Then decrement the same variable by 1.
+
+    Finally, print its value to the console using
+    the following format:
+
+    "Current value is: variableValue"
+*/
+// 3.
+/*
+    Create an array containing the following elements:
+
+    'hello', 'planet', 'Jupiter'
+
+    Concatenate all of the strings
+    and print the result to the console.
+*/
+// 4.
+/*
+    Create an object called course.
+
+    Add the following properties:
+
+    - courseName (string) with any value
+    - courseTeacher (string) with any value
+    - duration (number) with any value
+    - languages (array) containing any elements
+*/
+// 5.
+/*
+    Print the entire languages array
+    from the course object to the console.
+*/
+// 6.
+/*
+    Print the last element of the languages array
+    to the console.
+*/
+// 7.
+/*
+    Reset the value of the variable
+    from the first task to an empty value
+    using the appropriate data type.
+*/
+// 8.
+/*
+    Check the data type
+    of the variable from the first task.
+*/
+
+let randomVar = 33 + + '27';
+
+let randomVAr = randomVar.toString();
+
+randomVar += 10;
+
+randomVar --;
+
+console.log(`Current value is ${randomVar}`); // 69
+
+let testArray = ['Hello', 'planet', 'Jupiter'];
+
+console.log(`${testArray[0]} ${testArray[1]} ${testArray[2]}`);
+
+const course = {
+    courseName: 'Frontend Programming',
+    courseTeacher: 'Vuk Karadzic',
+    duration: 1.5,
+    language: ['JavaScript', 'HTML5', 'CSS3']
+}
+
+console.log(course.language);
+
+console.log(course.language[course.language.length-1]); // CSS3
+
+randomVar = null;
+
+console.log(typeof(randomVar)); // object
