@@ -1,6 +1,9 @@
 const userInput = document.getElementById('input-number');
 const multiplyBtn = document.getElementById('btn-multiply');
-// ! Add all buttons for homework
+const divideBtn = document.getElementById('btn-divide');
+const addBtn = document.getElementById('btn-add');
+const subtractBtn = document.getElementById('btn-subtract');
+const clearBtn = document.getElementById('btn-clear');
 
 
 const currentCalculationOutput = document.getElementById('current-calculation');
