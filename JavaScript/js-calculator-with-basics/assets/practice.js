@@ -497,3 +497,55 @@ console.log(course.language[course.language.length-1]); // CSS3
 randomVar = null;
 
 console.log(typeof(randomVar)); // object
+
+console.log(`---------------------`);
+
+let myBool;
+
+// ? Comparison operators (== & ===)
+
+// Operator compares operands by value only (double (loose) equality)
+console.log(10 == 10); 
+
+console.log(`10 == 10 is: ${10 == 10}`); // true
+
+console.log(`50 != 50 is: ${50 != 50}`); // false
+
+console.log(`Comparing strings 'Hello' and 'Hello': ${'Hello' == 'Hello'}`); // true
+
+console.log(`Comparing strings 'World' and 'Winter': ${'World' == 'Winter'}`); // false
+
+console.log(`Comparing strings 'World' and 'world': ${'World' == 'world'}`); // flase
+
+console.log(`Comparing strings 'World' and 'Winter': ${'World' != 'Winter'}`); // true
+
+console.log(`100 and '100' is equal? : ${100 == '100'}`); // true
+
+// Operator === compares operands by both value and type (triple/strict equality)
+console.log(`100 and '100' is equal? : ${100 === '100'}`); // false
+
+console.log(`100 and '100' is equal? : ${100 === parseInt('100')}`); // true
+
+console.log(`100 and '100' is not equal? : ${100 !== parseInt('100')}`); // flase
+
+// ? Relational operators (<, >, <=, >=)
+
+console.log(`25 > 3 is: ${25 > 3}`); // true
+
+console.log(`-17.7 < 0 is: ${-17.7 < 0}`); // true
+
+console.log(`44 >= 44 is: ${44 >= 44}`); // true
+
+console.log(`2 <= 2 is: ${2 <= 2}`); // true
+
+console.log(`33 > '12' is: ${33 > '12'}`); // true
+
+console.log(`33 < '11' is: ${33 < '11'}`); // false
+
+console.log(`'ab' > 'aa' is: ${'ab' > 'aa'}`); // true
+
+console.log(`'c' > 'C' is: ${'c' > 'C'}`); // true
+
+console.log(`'c' > 'C' is: ${'c' >= 'C'}`); // true
+
+console.log(`'a' > 'B' is: ${'a' > 'B'}`); // true 
