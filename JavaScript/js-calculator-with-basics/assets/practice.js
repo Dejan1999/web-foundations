@@ -549,3 +549,62 @@ console.log(`'c' > 'C' is: ${'c' > 'C'}`); // true
 console.log(`'c' > 'C' is: ${'c' >= 'C'}`); // true
 
 console.log(`'a' > 'B' is: ${'a' > 'B'}`); // true 
+
+// ! STATMENT(Blocks)
+
+console.log(`------IF-BLOCK---------`);
+
+// 1. IF Block
+if (5 === 5) {
+    console.log(`5 is equal to 5.`);
+}
+
+if (20 === '20') {
+    console.log(`20 is eqaul to '20'.`);
+}
+
+if (20 !== '20') {
+    console.log(`20 is not equal to '20'by triple equality.`);
+}
+
+// prompt example:
+const number = prompt('Enter your number: '); // prompt return string
+
+console.log(typeof(number)); // string
+
+if (number > 0) {
+    console.log(`Your number ${number} is greater than 0.`);
+}
+
+console.log(`------IF-ELSE-BLOCK---------`);
+
+// 2. IF-ELSE Block
+if (number > 0) {
+    console.log(`Your number ${number} is greater than 0.`);
+} else {
+    console.log(`Your number ${number} is less than 0.`);
+}
+
+console.log(`------IF-ELSE IF-ELSE-BLOCK---------`);
+
+// 3. IF-ELSE IF-ELSE Block
+if (number > 0) {
+    console.log(`Your number ${number} is greater than 0.`);
+} else if (number < 0) {
+    console.log(`Your number ${number} is less than 0.`);
+} else {
+    console.log(`Your number ${number} is equal to 0.`);
+}
+
+// ! Nested IF-ELSE Blocks
+
+console.log(`--------NESTED IF-ELSEBLOCK-----------`);
+if (number >= 0) {
+    if (number > 0) {
+        console.log(`Your number ${number} is greater than 0.`);
+    } else {
+        console.log(`Your number ${number} is equal to 0.`);
+    }
+} else {
+    console.log(`Your number ${number} is less than 0.`);
+}
